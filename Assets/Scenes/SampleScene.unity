@@ -551,6 +551,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1317665845}
   - component: {fileID: 1317665847}
+  - component: {fileID: 1317665848}
   - component: {fileID: 1317665846}
   m_Layer: 5
   m_Name: TXT_Event
@@ -676,6 +677,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1317665844}
   m_CullTransparentMesh: 1
+--- !u!114 &1317665848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1317665844}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 704119de9b751df43ba71c30c0cd07e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: {fileID: 1317665846}
 --- !u!1 &1389298663
 GameObject:
   m_ObjectHideFlags: 0
@@ -686,6 +700,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1389298664}
   - component: {fileID: 1389298667}
+  - component: {fileID: 1389298668}
   - component: {fileID: 1389298666}
   - component: {fileID: 1389298665}
   m_Layer: 5
@@ -759,7 +774,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1389298666}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1389298668}
+        m_TargetAssemblyTypeName: UiButtonPlus, Assembly-CSharp
+        m_MethodName: BTN_Plus
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1389298666
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -798,6 +825,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1389298663}
   m_CullTransparentMesh: 1
+--- !u!114 &1389298668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1389298663}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7486302c61ae2f043a7558a0a4c3698a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uiScore: {fileID: 1317665848}
 --- !u!1 &1541899760
 GameObject:
   m_ObjectHideFlags: 0
@@ -911,6 +951,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1629999866}
   - component: {fileID: 1629999869}
+  - component: {fileID: 1629999870}
   - component: {fileID: 1629999868}
   - component: {fileID: 1629999867}
   m_Layer: 5
@@ -984,7 +1025,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1629999868}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1629999870}
+        m_TargetAssemblyTypeName: UiButtonMinus, Assembly-CSharp
+        m_MethodName: BTN_Minus
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1629999868
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1023,6 +1076,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1629999865}
   m_CullTransparentMesh: 1
+--- !u!114 &1629999870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1629999865}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d1a8af166d1b8d4cb7000069cd1a968, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uiScore: {fileID: 1317665848}
 --- !u!1 &1783999177
 GameObject:
   m_ObjectHideFlags: 0
