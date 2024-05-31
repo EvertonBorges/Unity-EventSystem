@@ -775,14 +775,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1389298668}
-        m_TargetAssemblyTypeName: UiButtonPlus, Assembly-CSharp
-        m_MethodName: BTN_Plus
-        m_Mode: 1
+      - m_Target: {fileID: 1629999870}
+        m_TargetAssemblyTypeName: UiButton, Assembly-CSharp
+        m_MethodName: BTN_AddScore
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -834,10 +834,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1389298663}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7486302c61ae2f043a7558a0a4c3698a, type: 3}
+  m_Script: {fileID: 11500000, guid: ba92f5793d285e340a0813baec56504e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  uiScore: {fileID: 1317665848}
 --- !u!1 &1541899760
 GameObject:
   m_ObjectHideFlags: 0
@@ -1027,13 +1026,13 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1629999870}
-        m_TargetAssemblyTypeName: UiButtonMinus, Assembly-CSharp
-        m_MethodName: BTN_Minus
-        m_Mode: 1
+        m_TargetAssemblyTypeName: UiButton, Assembly-CSharp
+        m_MethodName: BTN_AddScore
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: -1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -1085,10 +1084,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1629999865}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d1a8af166d1b8d4cb7000069cd1a968, type: 3}
+  m_Script: {fileID: 11500000, guid: ba92f5793d285e340a0813baec56504e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  uiScore: {fileID: 1317665848}
 --- !u!1 &1783999177
 GameObject:
   m_ObjectHideFlags: 0

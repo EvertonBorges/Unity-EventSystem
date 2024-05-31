@@ -8,16 +8,9 @@ public class UiScore : MonoBehaviour
 
     private int score = 0;
 
-    private void AddScore()
+    private void AddScore(int value)
     {
-        score++;
-
-        UpdateScoreText();
-    }
-
-    private void RemoveScore()
-    {
-        score--;
+        score += value;
 
         UpdateScoreText();
     }
@@ -30,13 +23,11 @@ public class UiScore : MonoBehaviour
     void OnEnable()
     {
         EventManager.OnAddScore += AddScore;
-        EventManager.OnRemoveScore += RemoveScore;
     }
 
     void OnDisable()
     {
         EventManager.OnAddScore -= AddScore;
-        EventManager.OnRemoveScore -= RemoveScore;
     }
 
 }

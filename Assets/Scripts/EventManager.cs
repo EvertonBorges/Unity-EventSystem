@@ -3,7 +3,6 @@ using System;
 public static class EventManager
 {
     
-    public static Action OnAddScore = () => {};
-    public static Action OnRemoveScore = () => {};
+    public static Action<int> OnAddScore = (value) => {};
 
 }
