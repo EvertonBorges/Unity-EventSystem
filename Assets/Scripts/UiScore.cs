@@ -3,19 +3,19 @@ using UnityEngine;
 
 public class UiScore : MonoBehaviour
 {
-    
+
     public TextMeshProUGUI text;
 
     private int score = 0;
 
-    public void AddScore()
+    private void AddScore()
     {
         score++;
 
         UpdateScoreText();
     }
 
-    public void RemoveScore()
+    private void RemoveScore()
     {
         score--;
 
@@ -25,6 +25,18 @@ public class UiScore : MonoBehaviour
     private void UpdateScoreText()
     {
         text.SetText(score.ToString());
+    }
+
+    void OnEnable()
+    {
+        EventManager.OnAddScore += AddScore;
+        EventManager.OnRemoveScore += RemoveScore;
+    }
+
+    void OnDisable()
+    {
+        EventManager.OnAddScore -= AddScore;
+        EventManager.OnRemoveScore -= RemoveScore;
     }
 
 }
